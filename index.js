@@ -12,12 +12,12 @@ program
     .option('-g | -glob <value>', 'Alternate search glob. Default  "**/*.json"')
     .option('-d | -dry', 'List but do not process token files')
     .option('-i | -in <value>', 'Quoted "" full path ending in / where token files are read. Default is "./tokens/"')
-    .option('-o | -out <value>', 'Quoted "" full path ending in / where outputs are placed. Default is "./css/"')
+    .option('-o | -out <value>', 'Quoted "" full path ending in / where outputs are placed. Default is "./scss/"')
     .option('-m | -mark <value>', '(e) Quoted "" comment used as a header file comment, do not add * //, default is "figma2Token generated file from sourcefile" ')
-    .option('-b | -block <value>', '(e) Quoted "" block statement, use F to skip using a block. Default is ":root"')
+    .option('-b | -block <array>', '(e) array with two entries open and close block {file} is replaced with file name [":root[data-theme={file} {", "{"]')
     .option('-p | -pfx <value>', '(e) Prefix for each token -- or $. Default is "--"')
-    .option('-s | -sep <value>', '(e) Sepertor between collaped key names. Default is "-"')
-    .option('-x | -ext <value>', '(e) String that will be used as file extention. Default is css, do not add .')
+    .option('-s | -sep <value>', '(e) Sepertor between collapsed key names. Default is "-"')
+    .option('-x | -ext <value>', '(e) String that will be used as file extention. Default is scss, do not add .')
     .action(build);
 
 program.version("0.0.1");
