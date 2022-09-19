@@ -97,7 +97,7 @@
       "description": "Use captial F for no block processing "
     },
     "ext": {
-      "value": "scss",
+      "value": "css",
       "type": "other",
       "description": "Outputs a scss file "
     },
