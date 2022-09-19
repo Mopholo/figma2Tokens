@@ -17,7 +17,8 @@ program
     .option('-b | -block <array>', '(e) array with two entries open and close block {file} is replaced with file name [":root[data-theme={file} {", "{"]')
     .option('-p | -pfx <value>', '(e) Prefix for each token -- or $. Default is "--"')
     .option('-s | -sep <value>', '(e) Sepertor between collapsed key names. Default is "-"')
-    .option('-x | -ext <value>', '(e) String that will be used as file extention. Default is scss, do not add .')
+    .option('-x | -ext <value>', '(e) String that will be used as file extention. Default is css, do not add .')
+    .option('-z | -zed', "Output tokens generated to command line")
     .action(build);
 
 program.version("0.0.1");
