@@ -1,7 +1,9 @@
-# figma2Tokens
-Simple transformer for figma-tokens
+# figma2Tokens npm package
+Simple transformer for figma-token file to css files. Highly Experimental
 
-npm install 
-node index.js build 
+npm install
+figma2Tokens -h 
 
-This should create a scss mixin in the css directory from the _dark.json file located in the token direcotry
+This should create a css or scss mixin in the css directory of your choice from a figma2Tokens json file 
+
+This is currenlty unsupported 
