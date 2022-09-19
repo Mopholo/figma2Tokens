@@ -1,15 +1,31 @@
 {
   "name": "figma2tokens",
   "version": "0.0.1",
-  "description": "Transforms figma-token files into scss/variable output files ",
-  "main": "index.js",
+  "description": "EXPERIMENTAL: Transforms figma-token exported json files into css/variable output files ",
+  "keywords" : [
+    "figma-tokens",
+    "figma",
+    "design-tokens"
+  ],
+  "homepage" : "https://github.com/Mopholo/figma2Tokens",
+  "bugs" : {
+     "url": "https://github.com/Mopholo/figma2Tokens/issues"
+  },
+  "main" : "index.js",
   "scripts": {
     "test" : "echo \"Error: no test specified\" && exit 1"
   },
-  "bin" :"index.js",
+  "repository": {
+    "type": "git",
+    "url": "ttps://github.com/Mopholo/figma2Tokens.git"
+  },
   "type": "module",
-  "author": "",
-  "license": "ISC",
+  "author": "Todd Wererelius",
+  "license": "MIT",
+  "private": false,  
+  "engines" : {
+    "node" : ">=18.2.0"
+  }, 
   "dependencies": {
     "commander": "^9.4.0",
     "conf": "^10.2.0",
