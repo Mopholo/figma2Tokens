@@ -60,7 +60,7 @@ let defaults = {
     Cfg: "figma2Tokens.cfg",
     Glob: '**/*.json',
     Dry: false,
-    In: "/tokens/",
+    In: "/src/tokens/",
     Out: "/src/static/css/generated/",
     Mark: defaultComment,
     Block: [":root[data-theme='$file$'] {", "}"],

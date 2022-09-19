@@ -1,24 +1,23 @@
 {
   "name": "figma2tokens",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "EXPERIMENTAL: Transforms figma-token exported json files into css/variable output files ",
-  "keywords" : [
+  "keywords": [
     "figma-tokens",
     "figma",
     "design-tokens"
   ],
-  "homepage" : "https://github.com/Mopholo/figma2Tokens",
-  "bugs" : {
-     "url": "https://github.com/Mopholo/figma2Tokens/issues"
+  "homepage": "https://github.com/Mopholo/figma2Tokens",
+  "bugs": {
+    "url": "https://github.com/Mopholo/figma2Tokens/issues"
   },
-  "main" : "index.js",
+  "main": "index.js",
   "scripts": {
-    "test" : "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin" : {
-    "figma2Tokens" : "./index.js"
+  "bin": {
+    "figma2Tokens": "./index.js"
   },
-
   "repository": {
     "type": "git",
     "url": "ttps://github.com/Mopholo/figma2Tokens.git"
@@ -26,10 +25,10 @@
   "type": "module",
   "author": "Todd Wererelius",
   "license": "MIT",
-  "private": false,  
-  "engines" : {
-    "node" : ">=18.2.0"
-  }, 
+  "private": false,
+  "engines": {
+    "node": ">=18.2.0"
+  },
   "dependencies": {
     "commander": "^9.4.0",
     "conf": "^10.2.0",
