@@ -1,4 +1,4 @@
-# figma2Tokens
+# figma2Tokens npm package
 Simple transformer for figma-token file to css files. Highly Experimental
 
 npm install
