@@ -24,11 +24,11 @@ const schema = {
     },
     In: {
         type: 'string',
-        default: "/tokens/"
+        default: "/src/tokens/"
     },
     Out: {
         type: 'string',
-        default: '/static/css/'
+        default: '/src/static/css/generated/'
     },
     Block: {
         type: 'array',
@@ -61,7 +61,7 @@ let defaults = {
     Glob: '**/*.json',
     Dry: false,
     In: "/tokens/",
-    Out: "/static/css/",
+    Out: "/src/static/css/generated/",
     Mark: defaultComment,
     Block: [":root[data-theme='$file$'] {", "}"],
     Ext: "css",
@@ -90,8 +90,8 @@ function mergeOptions (opts) {
 
 
     // patch input/output directories 
-    switches.In = '.' + "/tokens/";
-    switches.Out = '.' + "/static/css/";
+    switches.In = '.' + switches.In;
+    switches.Out = '.' + switches.Out;
 
     // Computed 
     switches.search = switches.In + switches.Glob;
@@ -221,7 +221,7 @@ function createTokensObject (data) {
 
 function getOutfile (fileName, switches, embedSwitches) {
     let outFile;
-    let ext = (embedSwitches && embedSwitches?.ext) ? embedSwitches.ext : switches.ext;
+    let ext = (embedSwitches && embedSwitches?.ext) ? embedSwitches.ext : switches.Ext;
     let outName = (embedSwitches && embedSwitches?.file) ? embedSwitches.file : fileName;
 
     outFile = switches.Out + outName + "." + ext;

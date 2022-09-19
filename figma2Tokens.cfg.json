@@ -1,7 +1,7 @@
 {
 	"Glob": "**/*.json",
-	"In": "/tokens/",
-	"Out": "/static/css/",
+	"In": "/src/tokens/",
+	"Out": "/src/static/css/generated/",
 	"Block": [
 		":root[data-theme='$file$'] {",
 		"}"

@@ -95,16 +95,6 @@
       "value": ":root[data-theme='$file$'] {/\\}",
       "type": "other",
       "description": "Use captial F for no block processing "
-    },
-    "ext": {
-      "value": "css",
-      "type": "other",
-      "description": "Outputs a scss file "
-    },
-    "file": {
-      "value": "dark",
-      "type": "other",
-      "description": "By default the section name is the output file name this overides that"
     }
   }
 }
