@@ -24,11 +24,11 @@ const schema = {
     },
     In: {
         type: 'string',
-        default: "/src/tokens/"
+        default: "./src/tokens/"
     },
     Out: {
         type: 'string',
-        default: '/src/static/css/generated/'
+        default: './src/static/css/generated/'
     },
     Block: {
         type: 'array',
@@ -60,8 +60,8 @@ let defaults = {
     Cfg: "figma2Tokens.cfg",
     Glob: '**/*.json',
     Dry: false,
-    In: "/src/tokens/",
-    Out: "/src/static/css/generated/",
+    In: "./src/tokens/",
+    Out: "./src/static/css/generated/",
     Mark: defaultComment,
     Block: [":root[data-theme='$file$'] {", "}"],
     Ext: "css",
@@ -90,8 +90,8 @@ function mergeOptions (opts) {
 
 
     // patch input/output directories 
-    switches.In = '.' + switches.In;
-    switches.Out = '.' + switches.Out;
+    switches.In = switches.In;
+    switches.Out = switches.Out;
 
     // Computed 
     switches.search = switches.In + switches.Glob;

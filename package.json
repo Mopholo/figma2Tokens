@@ -1,6 +1,6 @@
 {
   "name": "figma2tokens",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "EXPERIMENTAL: Transforms figma-token exported json files into css/variable output files ",
   "keywords": [
     "figma-tokens",
