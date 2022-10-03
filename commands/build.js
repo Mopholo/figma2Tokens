@@ -28,7 +28,7 @@ const schema = {
     },
     Out: {
         type: 'string',
-        default: './src/static/css/generated/'
+        default: './src/static/scss/generated/'
     },
     Block: {
         type: 'array',
@@ -36,7 +36,7 @@ const schema = {
     },
     Ext: {
         type: 'string',
-        default: 'css'
+        default: 'scss'
     },
     Mark: {
         type: 'string',
@@ -61,10 +61,10 @@ let defaults = {
     Glob: '**/*.json',
     Dry: false,
     In: "./src/tokens/",
-    Out: "./src/static/css/generated/",
+    Out: "./src/static/scss/generated/",
     Mark: defaultComment,
     Block: [":root[data-theme='$file$'] {", "}"],
-    Ext: "css",
+    Ext: "scss",
     Pfx: "--",
     Sep: "-",
     Ref: ["var(", ")"],
