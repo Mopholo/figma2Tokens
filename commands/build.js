@@ -153,7 +153,7 @@ function flattenTokens (treeTokens, processSwitches) {
                     contents.value = contents.value.replaceAll(".", "-");
                     contents.value = processSwitches.Ref[0] + processSwitches.Pfx + contents.value.substring(1, contents.value.length - 1) + processSwitches.Ref[1];
                 }
-                flatTokens[processSwitches.Pfx + (previousKeyName ? previousKeyName + processSwitches.Sep : "") + key] = contents.value;
+                flatTokens[processSwitches.Pfx + (previousKeyName ? previousKeyName + processSwitches.Sep : "") + key] = contents.value + ";";
             } else {
                 recursiveFlatten(contents, (previousKeyName ? previousKeyName + processSwitches.Sep : "") + key);
             }

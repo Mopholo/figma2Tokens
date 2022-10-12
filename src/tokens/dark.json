@@ -180,5 +180,9 @@
       "value": ":root[data-theme='$file$'] {/\\}",
       "type": "other"
     }
+  },
+  "s-app-background-color": {
+    "value": "{a-color-deepest-purple}",
+    "type": "color"
   }
 }

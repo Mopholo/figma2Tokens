@@ -47,11 +47,11 @@
     "value": "{a-color-white}",
     "type": "color"
   },
-  "s-Row-font-color": {
+  "s-row-font-color": {
     "value": "{a-color-deepest-purple}",
     "type": "color"
   },
-  "s-Row-border-color": {
+  "s-row-border-color": {
     "value": "{a-color-selected-gray}",
     "type": "color"
   },
@@ -176,5 +176,9 @@
       "value": ":root[data-theme='$file$'] {/\\}",
       "type": "other"
     }
+  },
+  "s-app-background-color": {
+    "value": "a-color-white",
+    "type": "color"
   }
 }
