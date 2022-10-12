@@ -8,16 +8,16 @@
       "value": "10px",
       "type": "spacing"
     },
-    "base": {
-      "value": "{a-padding.md}",
-      "type": "spacing"
-    },
     "lg": {
       "value": "20px",
       "type": "spacing"
     },
     "xl": {
       "value": "40px",
+      "type": "spacing"
+    },
+    "base": {
+      "value": "{a-padding.md}",
       "type": "spacing"
     }
   },
@@ -30,16 +30,16 @@
       "value": "10px",
       "type": "spacing"
     },
-    "base": {
-      "value": "{a-gap.md}",
-      "type": "spacing"
-    },
     "lg": {
       "value": "20px",
       "type": "spacing"
     },
     "xl": {
       "value": "40px",
+      "type": "spacing"
+    },
+    "base": {
+      "value": "{a-gap.md}",
       "type": "spacing"
     }
   },
